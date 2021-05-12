@@ -1,0 +1,651 @@
+Microsoft Windows [Version 10.0.19042.928]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\--->docker run -d redis
+75916d59c9b72e7ac1b38026f7b357236fdfd30855761844ab1617bfc6289431
+
+C:\Users\--->docker exec -it 75916d59c9b72e7ac1b38026f7b357236fdfd30855761844ab1617bfc6289431 bash
+root@75916d59c9b7:/data# redis-cli
+127.0.0.1:6379> HMSET student:Ali firstname "Ali" lastname "Ahmed" id "1" city "cairo" zipcpde "11511"
+OK
+127.0.0.1:6379> HGETALL student:Ali
+ 1) "firstname"
+ 2) "Ali"
+ 3) "lastname"
+ 4) "Ahmed"
+ 5) "id"
+ 6) "1"
+ 7) "city"
+ 8) "cairo"
+ 9) "zipcpde"
+10) "11511"
+127.0.0.1:6379> HMSET student:Rewan firstname "Rewan" lastname "Yehia" id "2" city "cairo" zipcpde "11511"
+OK
+127.0.0.1:6379> HGETALL student:Rewan
+ 1) "firstname"
+ 2) "Rewan"
+ 3) "lastname"
+ 4) "Yehia"
+ 5) "id"
+ 6) "2"
+ 7) "city"
+ 8) "cairo"
+ 9) "zipcpde"
+10) "11511"
+127.0.0.1:6379> HMSET student:John firstname "John" lastname "nelson" id "3" city "NYC" zipcpde "39828"
+OK
+127.0.0.1:6379> HGETALL student:John
+ 1) "firstname"
+ 2) "John"
+ 3) "lastname"
+ 4) "nelson"
+ 5) "id"
+ 6) "3"
+ 7) "city"
+ 8) "NYC"
+ 9) "zipcpde"
+10) "39828"
+127.0.0.1:6379> HMSET student:Yasser firstname "Yasser" lastname "mohamed" id "4" city "Giza" zipcpde "12511"
+OK
+127.0.0.1:6379> HGETALL student:Yasser
+ 1) "firstname"
+ 2) "Yasser"
+ 3) "lastname"
+ 4) "mohamed"
+ 5) "id"
+ 6) "4"
+ 7) "city"
+ 8) "Giza"
+ 9) "zipcpde"
+10) "12511"
+127.0.0.1:6379> HMSET student:Nadeen firstname "Nadeen" lastname "omar" id "5" city "Alexandria" zipcpde "21532"
+OK
+127.0.0.1:6379> HGETALL student:Nadeen
+ 1) "firstname"
+ 2) "Nadeen"
+ 3) "lastname"
+ 4) "omar"
+ 5) "id"
+ 6) "5"
+ 7) "city"
+ 8) "Alexandria"
+ 9) "zipcpde"
+10) "21532"
+127.0.0.1:6379> HMSET Course:Webprogramming CourseID "CS324" CourseName "Webprogramming" CreditHourse "3Hours"
+OK
+127.0.0.1:6379> HGETALL Course:Webprogramming
+1) "CourseID"
+2) "CS324"
+3) "CourseName"
+4) "Webprogramming"
+5) "CreditHourse"
+6) "3Hours"
+127.0.0.1:6379> HMSET Course:Communicationskills CourseID "NC133" CourseName "Communicationskills" CreditHourse "3Hours"
+OK
+127.0.0.1:6379> HGETALL Course:Communicationskills
+1) "CourseID"
+2) "NC133"
+3) "CourseName"
+4) "Communicationskills"
+5) "CreditHourse"
+6) "3Hours"
+127.0.0.1:6379> HMSET Course:DatabaseSystem CourseID "IS273" CourseName "DatabaseSystem" CreditHourse "3Hours"
+OK
+127.0.0.1:6379> HGETALL Course:DatabaseSystem
+1) "CourseID"
+2) "IS273"
+3) "CourseName"
+4) "DatabaseSystem"
+5) "CreditHourse"
+6) "3Hours"
+127.0.0.1:6379> HMSET Course:Physics CourseID "BA113" CourseName "Physics" CreditHourse "3Hours"
+OK
+127.0.0.1:6379> HGETALL Course:Physics
+1) "CourseID"
+2) "BA113"
+3) "CourseName"
+4) "Physics"
+5) "CreditHourse"
+6) "3Hours"
+127.0.0.1:6379> HMSET Course:ESP CourseID "LH135" CourseName "ESP" CreditHourse "3Hours"
+OK
+127.0.0.1:6379> HGETALL Course:ESP
+1) "CourseID"
+2) "LH135"
+3) "CourseName"
+4) "ESP"
+5) "CreditHourse"
+6) "3Hours"
+127.0.0.1:6379> HMSET Instrucror:Mostafa InstructorName "Mostafa" InstructorofficNO "305" InstructorID " AA1"
+OK
+127.0.0.1:6379> HGETALL Instrucror:Mostafa
+1) "InstructorName"
+2) "Mostafa"
+3) "InstructorofficNO"
+4) "305"
+5) "InstructorID"
+6) "AA1"
+127.0.0.1:6379> HMSET Instructor:Ebrahim InstructorName "Ebrahim" InstructorofficNO "204" InstructorID "ED3"
+OK
+127.0.0.1:6379> HGETALL Instructor:Ebrahim
+1) "InstructorName"
+2) "Ebrahim"
+3) "InstructorofficNO"
+4) "204"
+5) "InstructorID"
+6) "ED3"
+127.0.0.1:6379> HMSET Instructor:Noha InstructorName "Noha" InstructorofficNO "401" InstructorID " PO9"
+OK
+127.0.0.1:6379> HGETALL Instructor:Noha
+1) "InstructorName"
+2) "Noha"
+3) "InstructorofficNO"
+4) "401"
+5) "InstructorID"
+6) " PO9"
+127.0.0.1:6379> HMSET Instructor:Salah InstructorName "Salah" InstructorofficNO "202" InstructorID "N5R"
+OK
+127.0.0.1:6379> HGETALL Instructor:Salah
+1) "InstructorName"
+2) "Salah"
+3) "InstructorofficNO"
+4) "202"
+5) "InstructorID"
+6) "N5R"
+127.0.0.1:6379> HMSET student:Ali firstname "Ali" lastname "Ahmed" id "1" city "cairo" zipcpde "11511" CourseID "LH135" CourseName "ESP" CreditHourse "3Hours" InstructorName "Noha" InstructorofficNO "401" InstructorID " PO9 "
+OK
+127.0.0.1:6379> HMSET student:Ali firstname "Ali" lastname "Ahmed" id "1" city "cairo" zipcpde "11511"
+OK
+127.0.0.1:6379> HGETALL student:Ali
+ 1) "firstname"
+ 2) "Ali"
+ 3) "lastname"
+ 4) "Ahmed"
+ 5) "id"
+ 6) "1"
+ 7) "city"
+ 8) "cairo"
+ 9) "zipcpde"
+10) "11511"
+11) "CourseID"
+12) "LH135"
+13) "CourseName"
+14) "ESP"
+15) "CreditHourse"
+16) "3Hours"
+17) "InstructorName"
+18) "Noha"
+19) "InstructorofficNO"
+20) "401"
+21) "InstructorID"
+22) " PO9"
+127.0.0.1:6379> del student:Ali
+(integer) 1
+127.0.0.1:6379> HGETALL student:Ali
+(empty array)
+127.0.0.1:6379> HMSET student:Ali firstname "Ali" lastname "Ahmed" id "1" city "cairo" zipcpde "11511"
+OK
+127.0.0.1:6379> HGETALL student:Ali
+ 1) "firstname"
+ 2) "Ali"
+ 3) "lastname"
+ 4) "Ahmed"
+ 5) "id"
+ 6) "1"
+ 7) "city"
+ 8) "cairo"
+ 9) "zipcpde"
+127.0.0.1:6379> HMSET student:Rewan firstname "Rewan" lastname "Yehia" id "2" city "cairo" zipcpde "11511" Course:Physics CourseID "BA113" CourseName "Physics" CreditHourse "3Hours" InstructorName "Salah" InstructorofficNO "202" InstrtorID "N5R"
+(error) ERR wrong number of arguments for 'hmset' command
+127.0.0.1:6379> HMSET studentInformation:Ali firstname "Ali" lastname "Ahmed" id "1" city "cairo" zipcpde "11511" CourseID "LH135" CourseName "ESP" CreditHourse "3Hours" InstructorName "Noha" InstructorofficNO "401" InstructorID " PO9"
+OK
+127.0.0.1:6379> HGETALL studentInformation:Ali
+ 1) "firstname"
+ 2) "Ali"
+ 3) "lastname"
+ 4) "Ahmed"
+ 5) "id"
+ 6) "1"
+ 7) "city"
+ 8) "cairo"
+ 9) "zipcpde"
+10) "11511"
+11) "CourseID"
+12) "LH135"
+13) "CourseName"
+14) "ESP"
+15) "CreditHourse"
+16) "3Hours"
+17) "InstructorName"
+18) "Noha"
+19) "InstructorofficNO"
+20) "401"
+21) "InstructorID"
+22) " PO9"
+127.0.0.1:6379> HGETALL student:Ali
+ 1) "firstname"
+ 2) "Ali"
+ 3) "lastname"
+ 4) "Ahmed"
+ 5) "id"
+ 6) "1"
+ 7) "city"
+ 8) "cairo"
+ 9) "zipcpde"
+10) "11511"
+127.0.0.1:6379> HMSET studentInformat:Rewan firstname "Rewan" lastname "Yehia" id "2" city "cairo" zipcpde "11511" CourseID "BA113" CourseName "Physics" CreditHourse "3Hours" InstructorName "Salah" InstructorofficNO "202" InstrtorID "N5R"
+OK
+127.0.0.1:6379> HGETALL studentInformation:Rewan
+(empty array)
+127.0.0.1:6379> HGETALL studentInform:Rewan
+(empty array)
+127.0.0.1:6379> HGETALL studentInformat:Rewan
+ 1) "firstname"
+ 2) "Rewan"
+ 3) "lastname"
+ 4) "Yehia"
+ 5) "id"
+ 6) "2"
+ 7) "city"
+ 8) "cairo"
+ 9) "zipcpde"
+10) "11511"
+11) "CourseID"
+12) "BA113"
+13) "CourseName"
+14) "Physics"
+15) "CreditHourse"
+16) "3Hours"
+17) "InstructorName"
+18) "Salah"
+19) "InstructorofficNO"
+20) "202"
+21) "InstrtorID"
+22) "N5R"
+127.0.0.1:6379> HVALS studentInformat:Rewan
+ 1) "Rewan"
+ 2) "Yehia"
+ 3) "2"
+ 4) "cairo"
+ 5) "11511"
+ 6) "BA113"
+ 7) "Physics"
+127.0.0.1:6379>  HMSET student:John firstname "John" lastname "nelson" id "3" city "NYC" zipcpde "39828" CourseID "NC133" CourseName "Communicationskills" CreditHourse "3Hours"
+OK
+127.0.0.1:6379> HVALS studentInformat:Rewan
+ 1) "Rewan"
+ 2) "Yehia"
+ 3) "2"
+ 4) "cairo"
+ 5) "11511"
+ 6) "BA113"
+ 7) "Physics"
+ 8) "3Hours"
+ 9) "Salah"
+10) "202"
+11) "N5R"
+127.0.0.1:6379>  HMSET studentInformation:John firstname "John" lastname "nelson" id "3" city "NYC" zipcpde "39828" CourseID "NC133" CourseName "Communicationskills" CreditHourse "3Hours" InstructorName "Noha" InstructorofficNO "401" InstructorID " PO9"
+OK
+127.0.0.1:6379> HGETALL studentInformation:John
+ 1) "firstname"
+ 2) "John"
+ 3) "lastname"
+ 4) "nelson"
+ 5) "id"
+ 6) "3"
+ 7) "city"
+ 8) "NYC"
+ 9) "zipcpde"
+10) "39828"
+11) "CourseID"
+12) "NC133"
+13) "CourseName"
+14) "Communicationskills"
+15) "CreditHourse"
+16) "3Hours"
+17) "InstructorName"
+18) "Noha"
+19) "InstructorofficNO"
+20) "401"
+21) "InstructorID"
+22) " PO9"
+127.0.0.1:6379> HVALS studentInformation:John
+ 1) "John"
+ 2) "nelson"
+ 3) "3"
+ 4) "NYC"
+ 5) "39828"
+ 6) "NC133"
+ 7) "Communicationskills"
+ 8) "3Hours"
+ 9) "Noha"
+10) "401"
+11) " PO9"
+127.0.0.1:6379>  HMSET studentInformation:Yasser firstname "Yasser" lastname "mohamed" id "4" city "Giza" zipcpde "12511" CourseID "IS273" CourseName "DatabaseSystem" CreditHourse "3Hours" InstructorName "Ebrahim" InstructorofficNO "204" InstructorID "ED3"
+OK
+127.0.0.1:6379> HGETALL studentInformation:Yasser
+ 1) "firstname"
+ 2) "Yasser"
+ 3) "lastname"
+ 4) "mohamed"
+ 5) "id"
+ 6) "4"
+ 7) "city"
+ 8) "Giza"
+ 9) "zipcpde"
+10) "12511"
+11) "CourseID"
+12) "IS273"
+13) "CourseName"
+14) "DatabaseSystem"
+15) "CreditHourse"
+16) "3Hours"
+17) "InstructorName"
+18) "Ebrahim"
+19) "InstructorofficNO"
+20) "204"
+21) "InstructorID"
+22) "ED3"
+127.0.0.1:6379> HVALS studentInformation:Yasser
+ 1) "Yasser"
+ 2) "mohamed"
+ 3) "4"
+ 4) "Giza"
+ 5) "12511"
+ 6) "IS273"
+ 7) "DatabaseSystem"
+ 8) "3Hours"
+ 9) "Ebrahim"
+10) "204"
+11) "ED3"
+127.0.0.1:6379> HMSET studentInformation:Nadeen firstname "Nadeen" lastname "omar" id "5" city "Alexandria" zipcpde "21532" CourseID "CS324" CourseName "Webprogramming" CreditHourse "3Hours" InstructorName "Mostafa" InstructorofficNO "305" InstructorID "AA1"
+OK
+127.0.0.1:6379> HGETALL studentInformation:Nadeen
+ 1) "firstname"
+ 2) "Nadeen"
+ 3) "lastname"
+ 4) "omar"
+ 5) "id"
+ 6) "5"
+ 7) "city"
+ 8) "Alexandria"
+ 9) "zipcpde"
+10) "21532"
+11) "CourseID"
+12) "CS324"
+13) "CourseName"
+14) "Webprogramming"
+15) "CreditHourse"
+16) "3Hours"
+17) "InstructorName"
+18) "Mostafa"
+19) "InstructorofficNO"
+20) "305"
+21) "InstructorID"
+22) "AA1"
+127.0.0.1:6379> HVALS studentInformation:Nadeen
+ 1) "Nadeen"
+ 2) "omar"
+ 3) "5"
+ 4) "Alexandria"
+ 5) "21532"
+ 6) "CS324"
+ 7) "Webprogramming"
+ 8) "3Hours"
+ 9) "Mostafa"
+10) "305"
+11) "AA1"
+127.0.0.1:6379> SET name "test"
+OK
+127.0.0.1:6379> GET name
+"test"
+127.0.0.1:6379> HMSET user:1 username test password 123
+OK
+127.0.0.1:6379> HGETALL user:1
+1) "username"
+2) "test"
+3) "password"
+4) "123"
+127.0.0.1:6379> LPUSH testlist mennamohamed
+(integer) 1
+127.0.0.1:6379> LPUSH testlist mennayehia
+(integer) 2
+127.0.0.1:6379> LPUSH testlist mernamahmoud
+(integer) 3
+127.0.0.1:6379> LRANGE testlist
+(error) ERR wrong number of arguments for 'lrange' command
+127.0.0.1:6379>
+127.0.0.1:6379> LRANGE testlist 0 10
+1) "mernamahmoud"
+2) "mennayehia"
+3) "mennamohamed"
+127.0.0.1:6379> SADD testlist mennamohamed
+(error) WRONGTYPE Operation against a key holding the wrong kind of value
+127.0.0.1:6379> SADD testlist mennamoham
+(error) WRONGTYPE Operation against a key holding the wrong kind of value
+127.0.0.1:6379> SADD testlist2 mennamohamed
+(integer) 1
+127.0.0.1:6379> SADD testlist2 mennayehia
+(integer) 1
+127.0.0.1:6379> SADD testlist2 mernamahmoud
+(integer) 1
+127.0.0.1:6379> SMEMBERS testlist2
+1) "mennamohamed"
+2) "mernamahmoud"
+3) "mennayehia"
+127.0.0.1:6379> ZADD testlist2 0 mennamohamed
+(error) WRONGTYPE Operation against a key holding the wrong kind of value
+127.0.0.1:6379> ZADD testlist3 0 mennamohamed
+(integer) 1
+127.0.0.1:6379> ZADD testlist3 0 mennayehia
+(integer) 1
+127.0.0.1:6379> ZADD testlist3 0 mernamahmoud
+(integer) 1
+127.0.0.1:6379> ZRANGEBYSCORE testlist3 0 1000
+1) "mennamohamed"
+2) "mennayehia"
+3) "mernamahmoud"127.0.0.1:6379> Hdel studentInformation:nadeen2 zipcode
+(integer) 1
+127.0.0.1:6379> Hvals studentInformation:nadeen2
+1) "nadeen"
+2) "omar"
+3) "5"
+4) "alexandria"
+5) "CS333"
+6) "AA1"
+127.0.0.1:6379> HMSET studentInformation:nadeen2 firstname "nadeen" lastname "omar" id "5" city "alexandria" zipcode "21532" CourseID "IS173" InstructorID "ED3"
+OK
+127.0.0.1:6379> Hvals studentInformation:nadeen2
+1) "nadeen"
+2) "omar"
+3) "5"
+4) "alexandria"
+5) "IS173"
+6) "ED3"
+7) "21532"
+127.0.0.1:6379> HGET studentInformation:nadeen city
+"alexandria"
+127.0.0.1:6379> lpush studentsIDS 6
+(integer) 7
+127.0.0.1:6379> lrange studentsIDS 0 10
+1) "6"
+2) "5"
+3) "8"
+4) "4"
+5) "3"
+6) "2"
+7) "1"
+127.0.0.1:6379> lpush studentsIDS 1 2 3 4 5
+(integer) 12
+127.0.0.1:6379> lpush studentsIDSs 1 2 3 4 5
+(integer) 5
+127.0.0.1:6379> lrange studentsIDS 0 10
+ 1) "5"
+ 2) "4"
+ 3) "3"
+ 4) "2"
+ 5) "1"
+ 6) "6"
+ 7) "5"
+ 8) "8"
+ 9) "4"
+10) "3"
+11) "2"
+127.0.0.1:6379> lrange studentsIDSs 0 10
+1) "5"
+2) "4"
+3) "3"
+4) "2"
+5) "1"
+127.0.0.1:6379> lpush studentNames AliAhmed RowanYehia JohnNelson YasserMohamed NadeenOmar
+(integer) 10
+127.0.0.1:6379> lpush studentNamess AliAhmed RowanYehia JohnNelson YasserMohamed NadeenOmar
+(integer) 5
+127.0.0.1:6379> lrange studentsIDSs 0 10
+1) "5"
+2) "4"
+3) "3"
+4) "2"
+5) "1"
+127.0.0.1:6379> lpush studentNamess AliAhmed RowanYehia JohnNelson YasserMohamed NadeenOmar
+(integer) 10
+127.0.0.1:6379> lrange studentNamess 0 10
+ 1) "NadeenOmar"
+ 2) "YasserMohamed"
+ 3) "JohnNelson"
+ 4) "RowanYehia"
+ 5) "AliAhmed"
+ 6) "NadeenOmar"
+ 7) "YasserMohamed"
+ 8) "JohnNelson"
+ 9) "RowanYehia"
+10) "AliAhmed"
+127.0.0.1:6379> lpush studentNamesss AliAhmed RowanYehia JohnNelson YasserMohamed NadeenOmar
+(integer) 5
+127.0.0.1:6379> lrange studentNamesss 0 10
+1) "NadeenOmar"
+2) "YasserMohamed"
+3) "JohnNelson"
+4) "RowanYehia"
+5) "AliAhmed"
+127.0.0.1:6379> lpush coursesNames WebProgramming CommunicationSkills DatabaseSystems Physics Esp
+(integer) 5
+127.0.0.1:6379> lrange coursesNames 0 10
+1) "Esp"
+2) "Physics"
+3) "DatabaseSystems"
+4) "CommunicationSkills"
+5) "WebProgramming"
+127.0.0.1:6379> lpush instructorNames Mostafa Ebrahim Noha Salah
+(integer) 10
+127.0.0.1:6379> lpush instructorNamess Mostafa Ebrahim Noha Salah
+(integer) 4
+127.0.0.1:6379> lrange instructorNamess 0 10
+1) "Salah"
+2) "Noha"
+3) "Ebrahim"
+4) "Mostafa"
+127.0.0.1:6379> lpop studentsIDSs
+"5"
+127.0.0.1:6379> lrange studentsIDSs  0 10
+1) "4"
+2) "3"
+3) "2"
+4) "1"
+127.0.0.1:6379> rpush instructorNamess
+(error) ERR wrong number of arguments for 'rpush' command
+127.0.0.1:6379> rpush instructorNamess Alaa
+(integer) 5
+127.0.0.1:6379> lrange instructorNamess  0 10
+1) "Salah"
+2) "Noha"
+3) "Ebrahim"
+4) "Mostafa"
+5) "Alaa"
+127.0.0.1:6379> rpop instructorNamess
+"Alaa"
+127.0.0.1:6379> lrange instructorNamess  0 10
+1) "Salah"
+2) "Noha"
+3) "Ebrahim"
+4) "Mostafa"
+127.0.0.1:6379> llen instructorNamess
+(integer) 4
+127.0.0.1:6379> lindex instructorNamess 1
+"Noha"
+127.0.0.1:6379> lset studentIDSs 0 8
+(error) ERR no such key
+127.0.0.1:6379> lset studentIDSs 1 12
+(error) ERR no such key
+127.0.0.1:6379> lset studentsIDSs  2 8
+OK
+127.0.0.1:6379> lrange studentsIDSs 0 10
+1) "4"
+2) "3"
+3) "8"
+4) "1"
+127.0.0.1:6379> lrange studentsIDSs 0 -1
+1) "4"
+2) "3"
+3) "8"
+4) "1"
+127.0.0.1:6379> lpushx studentsIDSs 5
+(integer) 5
+127.0.0.1:6379> lrange studentsIDSs 0 -1
+1) "5"
+2) "4"
+3) "3"
+4) "8"
+5) "1"
+127.0.0.1:6379> lpushx num 1 2 3 4 5
+(integer) 0
+127.0.0.1:6379> linsert instructorNamess before Ebrahim dalia
+(integer) 5
+127.0.0.1:6379> lrange instructorNamess 0 -1
+1) "Salah"
+2) "Noha"
+3) "dalia"
+4) "Ebrahim"
+5) "Mostafa"
+127.0.0.1:6379> linsert instructorNamess after Ebrahim waleed
+(integer) 6
+127.0.0.1:6379> lrange instructorNamess 0 -1
+1) "Salah"
+2) "Noha"
+3) "dalia"
+4) "Ebrahim"
+5) "waleed"
+6) "Mostafa"
+127.0.0.1:6379> lpush HospitalDoctorsname DRAhmed DREhab
+(integer) 4
+127.0.0.1:6379> lpush HospitalDoctorsnames DRAhmed DREhab
+(integer) 2
+127.0.0.1:6379> lrange HospitalDoctornames 0 -1
+(empty array)
+127.0.0.1:6379> lrange HospitalDoctorsnames 0 -1
+1) "DREhab"
+2) "DRAhmed"
+127.0.0.1:6379> lpush HospitalDoctorsIDS 30 27
+(integer) 2
+127.0.0.1:6379> lrange HospitalDoctorsIDS 0 -1
+1) "27"
+2) "30"
+127.0.0.1:6379> lpush HospitalPatientIDS 72 24
+(integer) 2
+127.0.0.1:6379> lrange HospitalPatientIDS 0 -1
+1) "24"
+2) "72"
+127.0.0.1:6379> lset HospitalPatientIDS  2 8
+(error) ERR index out of range
+127.0.0.1:6379> lset HospitalPatientIDS  0 8
+OK
+127.0.0.1:6379> lrange HospitalPatientIDS 0 -1
+1) "8"
+2) "72"
+127.0.0.1:6379> lset HospitalPatientIDS 1 4
+OK
+127.0.0.1:6379> lrange HospitalPatientIDS 0 -1
+1) "8"
+2) "4"
+127.0.0.1:6379> SAVE
+OK
